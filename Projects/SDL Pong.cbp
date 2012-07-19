@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SDL Pong" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="Code/;Code/source/;Code/headers/;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/SDL Pong" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/SDL Pong" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="`sdl-config --cflags`" />
+			<Add directory="include" />
+		</Compiler>
+		<Linker>
+			<Add option="`sdl-config --libs`" />
+			<Add option="-lSDL_image" />
+			<Add option="-lSDL_ttf" />
+			<Add option="-lSDL_mixer" />
+		</Linker>
+		<Unit filename="Game.hpp">
+			<Option virtualFolder="Code/headers/" />
+		</Unit>
+		<Unit filename="include/Audio.hpp">
+			<Option virtualFolder="Code/headers/" />
+		</Unit>
+		<Unit filename="include/Ball.hpp">
+			<Option virtualFolder="Code/headers/" />
+		</Unit>
+		<Unit filename="include/Collision.hpp">
+			<Option virtualFolder="Code/headers/" />
+		</Unit>
+		<Unit filename="include/Graphics.hpp">
+			<Option virtualFolder="Code/headers/" />
+		</Unit>
+		<Unit filename="include/Paddle.hpp">
+			<Option virtualFolder="Code/headers/" />
+		</Unit>
+		<Unit filename="include/System.hpp">
+			<Option virtualFolder="Code/headers/" />
+		</Unit>
+		<Unit filename="include/Window.hpp">
+			<Option virtualFolder="Code/headers/" />
+		</Unit>
+		<Unit filename="main.cpp">
+			<Option virtualFolder="Code/source/" />
+		</Unit>
+		<Unit filename="src/Audio.cpp">
+			<Option virtualFolder="Code/source/" />
+		</Unit>
+		<Unit filename="src/Ball.cpp">
+			<Option virtualFolder="Code/source/" />
+		</Unit>
+		<Unit filename="src/Collision.cpp">
+			<Option virtualFolder="Code/source/" />
+		</Unit>
+		<Unit filename="src/Graphics.cpp">
+			<Option virtualFolder="Code/source/" />
+		</Unit>
+		<Unit filename="src/Paddle.cpp">
+			<Option virtualFolder="Code/source/" />
+		</Unit>
+		<Unit filename="src/System.cpp">
+			<Option virtualFolder="Code/source/" />
+		</Unit>
+		<Unit filename="src/Window.cpp">
+			<Option virtualFolder="Code/source/" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
