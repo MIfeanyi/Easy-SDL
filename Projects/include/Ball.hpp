@@ -16,7 +16,7 @@ public:
     void Move();
     Graphics Gfx;
 
-    int Direction;
+    int Direction, BallHeight;
     int Speed;
 
     virtual ~Ball();

@@ -12,7 +12,7 @@ Window::Window(int WindowWidth, int WindowHeight, string WindowTitle, bool Full)
     Height      = WindowHeight;
     Title       = WindowTitle;
     Fullscreen  = Full;
-
+    Tick        = SDL_GetTicks();
     SDL_WM_SetCaption(Title.c_str(),NULL);
 
     if(Fullscreen)
@@ -23,6 +23,7 @@ Window::Window(int WindowWidth, int WindowHeight, string WindowTitle, bool Full)
     {
         Screen  = SDL_SetVideoMode( Width, Height, 32, SDL_SWSURFACE );
     }
+
 }
 
 Window::~Window()
@@ -30,6 +31,19 @@ Window::~Window()
     //dtor
 }
 
+void Window::LimitFramerate()
+{
+    //Tick = SDL_GetTicks();
+    cout<< SDL_GetTicks() <<endl;
+
+    //1000 = 1.000sec
+    if( SDL_GetTicks() - Tick < 1000 / FPS )
+    {
+        cout<<"Delay: "<< SDL_GetTicks() <<endl;
+        cout<<"Ticks: "<< Tick<<endl;
+        SDL_Delay( (int)((1000 / FPS) - (SDL_GetTicks() - Tick ) ) );
+    }
+}
 void Window::CreateWindow(int WindowWidth, int WindowHeight, string WindowTitle, bool Full)
 {
     IsOpen      = true;
@@ -38,6 +52,7 @@ void Window::CreateWindow(int WindowWidth, int WindowHeight, string WindowTitle,
     Height      = WindowHeight;
     Title       = WindowTitle;
     Fullscreen  = Full;
+    Tick        = SDL_GetTicks();
 
     SDL_WM_SetCaption(Title.c_str(),NULL);
 
@@ -67,4 +82,5 @@ void Window::Flip()
     {
         cout<<"SDL_FLIP Error!"<<endl;
     }
+    Tick = SDL_GetTicks();
 }

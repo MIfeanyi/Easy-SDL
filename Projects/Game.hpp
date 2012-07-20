@@ -8,6 +8,8 @@
 
 int UpdateGame(Window &App)
 {
+    App.FPS =60;
+
     //maybe i need a reference to the window
     Uint8 *Key;
     SDL_Event Event;
@@ -23,7 +25,10 @@ int UpdateGame(Window &App)
     PlayerPaddle.Reset(App, true);
     AIPaddle.Reset(App, false);
 
-    PlayerPaddle.Speed = 1;
+    PlayerPaddle.Speed = 5;
+
+    GameBall.BallHeight = 3;
+    GameBall.Direction = 4;
 
     //Images
     cout<<"Loading Images"<<endl;
@@ -80,20 +85,23 @@ int UpdateGame(Window &App)
                 PlayerPaddle.Move(false);
             }
 
-            AIPaddle.Move(GameBall);
+            //AIPaddle.Move(GameBall);
 
             //Collision stuff goes here
 
             //Draw
-            GameBall.Gfx.Dest.x++;
+
 
         }
+
+
         App.Clear();
 
         App.Draw(AIPaddle.Gfx);
         App.Draw(PlayerPaddle.Gfx);
         App.Draw(GameBall.Gfx);
 
+        App.LimitFramerate();
         App.Flip();
 
     }

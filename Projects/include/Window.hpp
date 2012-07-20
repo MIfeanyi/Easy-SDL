@@ -25,8 +25,12 @@ public:
     void Update();
     void Clear();
     void Flip();
+    void LimitFramerate();
 
     int Width, Height;
+
+    //for FPS limiter
+    int FPS, Tick;
 
 protected:
 

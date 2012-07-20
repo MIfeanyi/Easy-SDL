@@ -261,7 +261,7 @@
 	"System.hpp"
 	"Game.hpp"
 
-1342313334 /home/michael/Easy-SDL/Projects/include/Window.hpp
+1342793826 /home/michael/Easy-SDL/Projects/include/Window.hpp
 	<string>
 	<SDL.h>
 	"Graphics.hpp"
@@ -285,12 +285,12 @@
 	<stdio.h>
 	<iostream>
 
-1342761164 /home/michael/Easy-SDL/Projects/Game.hpp
+1342800729 /home/michael/Easy-SDL/Projects/Game.hpp
 	"Ball.hpp"
 	"Paddle.hpp"
 	"Collision.hpp"
 
-1342314646 /home/michael/Easy-SDL/Projects/include/Ball.hpp
+1342792055 /home/michael/Easy-SDL/Projects/include/Ball.hpp
 	"System.hpp"
 	"Graphics.hpp"
 	"Window.hpp"
@@ -305,7 +305,7 @@
 1342314648 source:/home/michael/Easy-SDL/Projects/src/Audio.cpp
 	"Audio.hpp"
 
-1342314646 source:/home/michael/Easy-SDL/Projects/src/Ball.cpp
+1342792506 source:/home/michael/Easy-SDL/Projects/src/Ball.cpp
 	"Ball.hpp"
 
 1342314648 source:/home/michael/Easy-SDL/Projects/src/Collision.cpp
@@ -320,6 +320,6 @@
 1342314648 source:/home/michael/Easy-SDL/Projects/src/System.cpp
 	"System.hpp"
 
-1342316746 source:/home/michael/Easy-SDL/Projects/src/Window.cpp
+1342799701 source:/home/michael/Easy-SDL/Projects/src/Window.cpp
 	"Window.hpp"
 

@@ -49,9 +49,6 @@
 		<Unit filename="include/Ball.hpp">
 			<Option virtualFolder="Code/headers/" />
 		</Unit>
-		<Unit filename="include/Collision.hpp">
-			<Option virtualFolder="Code/headers/" />
-		</Unit>
 		<Unit filename="include/Graphics.hpp">
 			<Option virtualFolder="Code/headers/" />
 		</Unit>
@@ -71,9 +68,6 @@
 			<Option virtualFolder="Code/source/" />
 		</Unit>
 		<Unit filename="src/Ball.cpp">
-			<Option virtualFolder="Code/source/" />
-		</Unit>
-		<Unit filename="src/Collision.cpp">
 			<Option virtualFolder="Code/source/" />
 		</Unit>
 		<Unit filename="src/Graphics.cpp">
