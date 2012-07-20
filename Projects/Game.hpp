@@ -85,8 +85,11 @@ int UpdateGame(Window &App)
             //Collision stuff goes here
 
             //Draw
+            GameBall.Gfx.Dest.x++;
 
         }
+        App.Clear();
+
         App.Draw(AIPaddle.Gfx);
         App.Draw(PlayerPaddle.Gfx);
         App.Draw(GameBall.Gfx);

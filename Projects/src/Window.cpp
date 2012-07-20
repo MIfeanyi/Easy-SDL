@@ -47,7 +47,7 @@ void Window::CreateWindow(int WindowWidth, int WindowHeight, string WindowTitle,
     }
     else
     {
-        Screen  = SDL_SetVideoMode( Width, Height, 32, SDL_DOUBLEBUF | SDL_SWSURFACE );
+        Screen  = SDL_SetVideoMode( Width, Height, 32, SDL_DOUBLEBUF | SDL_HWSURFACE );
     }
 }
 
@@ -56,6 +56,10 @@ void Window::Draw(Graphics &Gfx)
     SDL_BlitSurface(Gfx.Image,/* &Gfx.Rect */ NULL,Screen, &Gfx.Dest);
 }
 
+void Window::Clear()
+{
+    SDL_FillRect(Screen, 0, SDL_MapRGB(Screen->format, 0, 0, 0));
+}
 
 void Window::Flip()
 {
