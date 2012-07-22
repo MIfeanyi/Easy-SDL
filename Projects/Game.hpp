@@ -6,6 +6,24 @@
 #include"Paddle.hpp"
 #include"Collision.hpp"
 
+bool CheckCollision(Ball ball, Paddle paddle)
+{
+    if( ball.Gfx.Dest.x + ball.Gfx.Dest.w  > paddle.Gfx.Dest.x &&
+        ball.Gfx.Dest.x < paddle.Gfx.Dest.x + paddle.Gfx.Dest.w &&
+        ball.Gfx.Dest.y + ball.Gfx.Dest.h > paddle.Gfx.Dest.y &&
+        ball.Gfx.Dest.y < paddle.Gfx.Dest.y + paddle.Gfx.Dest.h
+       )
+       {
+           return true;
+       }
+       else
+       {
+           return false;
+       }
+
+
+}
+
 int UpdateGame(Window &App)
 {
     App.FPS =60;
@@ -90,10 +108,36 @@ int UpdateGame(Window &App)
             //Collision stuff goes here
 
             //Draw
-
-
+        }
+        //Collision between Paddle & ball
+        if( CheckCollision(GameBall,AIPaddle) )
+        {
+            cout<<"Collision"<<endl;
+            GameBall.Bounce();
+        }
+        if( CheckCollision(GameBall,PlayerPaddle) )
+        {
+            GameBall.Bounce();
+            cout<<"Collision"<<endl;
         }
 
+        //bounces ball
+        if(GameBall.Gfx.Dest.x > App.Width)
+        {
+            GameBall.Bounce();
+        }
+        if(GameBall.Gfx.Dest.x < 0)
+        {
+            GameBall.Bounce();
+        }
+        if(GameBall.Gfx.Dest.y + 32 > App.Height)
+        {
+            GameBall.Bounce(1);
+        }
+        if(GameBall.Gfx.Dest.y < 0)
+        {
+            GameBall.Bounce(1);
+        }
 
         App.Clear();
 
@@ -109,10 +153,7 @@ int UpdateGame(Window &App)
     return 10;
 }
 
-void CheckCollision()
-{
-    Collision Col;
-}
+
 
 int UpdateMenu()
 {

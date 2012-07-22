@@ -2,6 +2,8 @@
 
 Paddle::Paddle()
 {
+    Gfx.Dest.h = 128;
+    Gfx.Dest.w = 32;
     //ctor
 }
 

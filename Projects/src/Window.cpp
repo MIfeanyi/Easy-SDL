@@ -34,13 +34,13 @@ Window::~Window()
 void Window::LimitFramerate()
 {
     //Tick = SDL_GetTicks();
-    cout<< SDL_GetTicks() <<endl;
+    //cout<< SDL_GetTicks() <<endl;
 
     //1000 = 1.000sec
     if( SDL_GetTicks() - Tick < 1000 / FPS )
     {
-        cout<<"Delay: "<< SDL_GetTicks() <<endl;
-        cout<<"Ticks: "<< Tick<<endl;
+        //cout<<"Delay: "<< SDL_GetTicks() <<endl;
+        //cout<<"Ticks: "<< Tick<<endl;
         SDL_Delay( (int)((1000 / FPS) - (SDL_GetTicks() - Tick ) ) );
     }
 }

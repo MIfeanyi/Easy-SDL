@@ -5,6 +5,7 @@
 #include"Graphics.hpp"
 #include"Window.hpp"
 
+
 class Ball
 {
 public:
@@ -13,11 +14,12 @@ public:
     void ResetBall(Window &App); // resets ball to the middle of the screen
     void Start(); // shoots off the ball
     void Bounce(); // changes the speed and bounces the ball
+    void Bounce(int direction);
     void Move();
     Graphics Gfx;
 
     int Direction, BallHeight;
-    int Speed;
+    int Speedx, Speedy;
 
     virtual ~Ball();
 protected:
