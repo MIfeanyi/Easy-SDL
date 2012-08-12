@@ -16,6 +16,7 @@ public:
     void Bounce(); // changes the speed and bounces the ball
     void Bounce(int direction);
     void Move();
+    void Random();
     Graphics Gfx;
 
     int Direction, BallHeight;

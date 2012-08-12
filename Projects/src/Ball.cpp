@@ -33,18 +33,40 @@ void Ball::ResetBall(Window &App)
 
 void Ball::Start()
 {
-    //Speed = 0;
+    Speedx = 0;
+    Speedy = 0;
     srand( (unsigned)time(NULL) );
     Direction = (int)rand() % 1;
 
     while(Speedx == 0 )
     {
-        Speedx = (int)rand() % 4;
+        Speedx += (int)rand() % 20;
+        Speedx -= (int)rand() % 20;
 
     }
     while(Speedy == 0)
     {
-        Speedy = (int)rand() % 4;
+        Speedy += (int)rand() % 20;
+        Speedy -= (int)rand() % 20;
+    }
+
+}
+
+void Ball::Random()
+{
+    srand( (unsigned)time(NULL) );
+    Speedx = 0;
+    Speedy = 0;
+    while(Speedx <= 0 )
+    {
+        Speedx += (int)rand() % 20;
+        Speedx -= (int)rand() % 20;
+
+    }
+    while(Speedy == 0)
+    {
+        Speedy += (int)rand() % 20;
+        Speedy -= (int)rand() % 20;
     }
 
 }

@@ -1,46 +1,55 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="Game.hpp" open="1" top="0" tabpos="1">
-		<Cursor position="3003" topLine="107" />
-	</File>
 	<File name="include/Audio.hpp" open="0" top="0" tabpos="8">
-		<Cursor position="15" topLine="0" />
+		<Cursor position="92" topLine="0" />
 	</File>
-	<File name="include/Ball.hpp" open="1" top="0" tabpos="6">
-		<Cursor position="431" topLine="0" />
+	<File name="include/Ball.hpp" open="0" top="0" tabpos="6">
+		<Cursor position="377" topLine="0" />
+	</File>
+	<File name="include/Font.hpp" open="1" top="0" tabpos="7">
+		<Cursor position="213" topLine="0" />
+	</File>
+	<File name="include/Game.hpp" open="1" top="1" tabpos="1">
+		<Cursor position="1155" topLine="39" />
 	</File>
 	<File name="include/Graphics.hpp" open="0" top="0" tabpos="10">
 		<Cursor position="130" topLine="0" />
 	</File>
-	<File name="include/Paddle.hpp" open="1" top="0" tabpos="4">
+	<File name="include/Paddle.hpp" open="0" top="0" tabpos="4">
 		<Cursor position="314" topLine="0" />
 	</File>
+	<File name="include/String.hpp" open="1" top="0" tabpos="4">
+		<Cursor position="117" topLine="0" />
+	</File>
 	<File name="include/System.hpp" open="0" top="0" tabpos="11">
-		<Cursor position="169" topLine="0" />
+		<Cursor position="169" topLine="3" />
 	</File>
 	<File name="include/Window.hpp" open="1" top="0" tabpos="2">
-		<Cursor position="434" topLine="7" />
-	</File>
-	<File name="main.cpp" open="0" top="0" tabpos="1">
-		<Cursor position="82" topLine="0" />
+		<Cursor position="482" topLine="8" />
 	</File>
 	<File name="src/Audio.cpp" open="0" top="0" tabpos="12">
-		<Cursor position="796" topLine="15" />
+		<Cursor position="796" topLine="0" />
 	</File>
-	<File name="src/Ball.cpp" open="1" top="1" tabpos="7">
-		<Cursor position="862" topLine="22" />
+	<File name="src/Ball.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="324" topLine="21" />
+	</File>
+	<File name="src/Font.cpp" open="1" top="0" tabpos="6">
+		<Cursor position="19" topLine="0" />
 	</File>
 	<File name="src/Graphics.cpp" open="0" top="0" tabpos="14">
 		<Cursor position="428" topLine="3" />
 	</File>
-	<File name="src/Paddle.cpp" open="1" top="0" tabpos="5">
-		<Cursor position="62" topLine="0" />
+	<File name="src/Paddle.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="367" topLine="6" />
+	</File>
+	<File name="src/String.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="231" topLine="0" />
 	</File>
 	<File name="src/System.cpp" open="0" top="0" tabpos="15">
-		<Cursor position="0" topLine="0" />
+		<Cursor position="77" topLine="0" />
 	</File>
 	<File name="src/Window.cpp" open="1" top="0" tabpos="3">
-		<Cursor position="1309" topLine="25" />
+		<Cursor position="1991" topLine="67" />
 	</File>
 </CodeBlocks_layout_file>

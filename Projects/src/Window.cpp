@@ -4,6 +4,7 @@ Window::Window()
 {
     //ctor
 }
+
 Window::Window(int WindowWidth, int WindowHeight, string WindowTitle, bool Full)
 {
     IsOpen      = true;
@@ -71,6 +72,24 @@ void Window::Draw(Graphics &Gfx)
     SDL_BlitSurface(Gfx.Image,/* &Gfx.Rect */ NULL,Screen, &Gfx.Dest);
 }
 
+void Window::DrawText(String &DrawString, Font &font, int x, int y)
+{
+    SDL_Rect Rect;
+    Rect.x = x;
+    Rect.y = y;
+
+    SDL_Surface *TextSurface;
+    TextSurface = TTF_RenderText_Solid(font.font, DrawString.Text.c_str(), DrawString.TextColor );
+
+    SDL_BlitSurface(TextSurface,NULL,Screen, &Rect);
+    SDL_FreeSurface(TextSurface);
+
+}
+
+void Window::RenderText()
+{
+    SDL_BlitSurface(Text,NULL,Screen, NULL);
+}
 void Window::Clear()
 {
     SDL_FillRect(Screen, 0, SDL_MapRGB(Screen->format, 0, 0, 0));

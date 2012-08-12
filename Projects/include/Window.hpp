@@ -4,11 +4,10 @@
 #include <string>
 #include <SDL.h>
 
-#include"Graphics.hpp"
+#include "String.hpp"
+#include "Graphics.hpp"
 
 using namespace std;
-
-
 
 
 class Window
@@ -26,6 +25,8 @@ public:
     void Clear();
     void Flip();
     void LimitFramerate();
+    void DrawText( String &DrawString, Font &font, int x, int y);
+    void RenderText();
 
     int Width, Height;
 
@@ -37,6 +38,7 @@ protected:
     bool Fullscreen, IsOpen;
     string Title;
     SDL_Surface *Screen;
+    SDL_Surface *Text;
     SDL_Surface *Buffer;
 
 private:

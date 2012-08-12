@@ -254,16 +254,19 @@
 1342300239 source:/home/michael/Projects/src/Paddle.cpp
 	"Paddle.hpp"
 
-1342715698 source:/home/michael/Easy-SDL/Projects/main.cpp
+1344625885 source:/home/michael/Easy-SDL/Projects/main.cpp
 	<SDL.h>
 	"Window.hpp"
+	"Font.hpp"
+	"String.hpp"
 	"Audio.hpp"
 	"System.hpp"
 	"Game.hpp"
 
-1342793826 /home/michael/Easy-SDL/Projects/include/Window.hpp
+1344641346 /home/michael/Easy-SDL/Projects/include/Window.hpp
 	<string>
 	<SDL.h>
+	"String.hpp"
 	"Graphics.hpp"
 
 1342315652 /home/michael/Easy-SDL/Projects/include/Graphics.hpp
@@ -285,12 +288,12 @@
 	<stdio.h>
 	<iostream>
 
-1342964194 /home/michael/Easy-SDL/Projects/Game.hpp
+1344633410 /home/michael/Easy-SDL/Projects/Game.hpp
 	"Ball.hpp"
 	"Paddle.hpp"
 	"Collision.hpp"
 
-1342937737 /home/michael/Easy-SDL/Projects/include/Ball.hpp
+1343765063 /home/michael/Easy-SDL/Projects/include/Ball.hpp
 	"System.hpp"
 	"Graphics.hpp"
 	"Window.hpp"
@@ -305,7 +308,7 @@
 1342314648 source:/home/michael/Easy-SDL/Projects/src/Audio.cpp
 	"Audio.hpp"
 
-1342964535 source:/home/michael/Easy-SDL/Projects/src/Ball.cpp
+1343765350 source:/home/michael/Easy-SDL/Projects/src/Ball.cpp
 	"Ball.hpp"
 
 1342314648 source:/home/michael/Easy-SDL/Projects/src/Collision.cpp
@@ -317,9 +320,59 @@
 1342935815 source:/home/michael/Easy-SDL/Projects/src/Paddle.cpp
 	"Paddle.hpp"
 
-1342314648 source:/home/michael/Easy-SDL/Projects/src/System.cpp
+1343849773 source:/home/michael/Easy-SDL/Projects/src/System.cpp
 	"System.hpp"
 
-1342799701 source:/home/michael/Easy-SDL/Projects/src/Window.cpp
+1344639192 source:/home/michael/Easy-SDL/Projects/src/Window.cpp
 	"Window.hpp"
+
+1343852240 source:/home/michael/Easy-SDL/Projects/Font.cpp
+	"Font.hpp"
+
+1344635166 /home/michael/Easy-SDL/Projects/Font.hpp
+	"SDL.h"
+	"SDL_ttf.h"
+	<string>
+
+1325205476 /usr/include/SDL/SDL_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1344631052 source:/home/michael/Easy-SDL/Projects/String.cpp
+	"String.hpp"
+
+1344634872 /home/michael/Easy-SDL/Projects/String.hpp
+	"Font.hpp"
+	<string>
+
+1344641492 /home/michael/Easy-SDL/Projects/include/String.hpp
+	<string>
+	<sstream>
+	"Font.hpp"
+
+1344636803 /home/michael/Easy-SDL/Projects/include/Font.hpp
+	"SDL.h"
+	"SDL_ttf.h"
+	<string>
+
+1344636373 source:/home/michael/Easy-SDL/Projects/src/Font.cpp
+	"Font.hpp"
+
+1344640997 source:/home/michael/Easy-SDL/Projects/src/String.cpp
+	"String.hpp"
+
+1344734859 source:/home/michael/Easy-SDL/Projects/src/main.cpp
+	<SDL.h>
+	"Window.hpp"
+	"Font.hpp"
+	"String.hpp"
+	"Audio.hpp"
+	"System.hpp"
+	"Game.hpp"
+
+1344735339 /home/michael/Easy-SDL/Projects/include/Game.hpp
+	"Ball.hpp"
+	"Paddle.hpp"
+	"Collision.hpp"
 
