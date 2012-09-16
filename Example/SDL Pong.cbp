@@ -40,16 +40,10 @@
 			<Add option="-lSDL_ttf" />
 			<Add option="-lSDL_mixer" />
 		</Linker>
-		<Unit filename="include/Audio.hpp" />
 		<Unit filename="include/Ball.hpp" />
 		<Unit filename="include/Collision.hpp" />
-		<Unit filename="include/Font.hpp" />
 		<Unit filename="include/Game.hpp" />
-		<Unit filename="include/Graphics.hpp" />
 		<Unit filename="include/Paddle.hpp" />
-		<Unit filename="include/String.hpp" />
-		<Unit filename="include/System.hpp" />
-		<Unit filename="include/Window.hpp" />
 		<Unit filename="src/Audio.cpp" />
 		<Unit filename="src/Ball.cpp" />
 		<Unit filename="src/Collision.cpp" />
