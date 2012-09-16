@@ -236,13 +236,13 @@ int UpdateGame(Window &App)
         //Collision between Paddle & ball
         if( CheckCollision(GameBall,AIPaddle) )
         {
-            cout<<"Collision"<<endl;
+            //cout<<"Collision"<<endl;
             GameBall.Bounce();
             //GameBall.Random();
         }
         if( CheckCollision(GameBall,PlayerPaddle) )
         {
-            cout<<"Collision"<<endl;
+            //cout<<"Collision"<<endl;
             GameBall.Bounce();
             //GameBall.Random();
 

@@ -1,13 +1,14 @@
 #ifndef SYSTEM_H
 #define SYSTEM_H
 
-#define ERROR 5
+#define KEYS int
 
 #include <stdio.h>
 #include <cstdlib>
 #include <time.h>
 #include <stdio.h>
 #include <iostream>
+#include <SDL.h>
 
 using namespace std;
 
@@ -18,6 +19,7 @@ public:
 
     void Init();
     void SetRect(int x, int y, int h, int w);
+    static int BindKey();
 
     virtual ~System();
 

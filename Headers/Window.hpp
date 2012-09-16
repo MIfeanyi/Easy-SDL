@@ -23,6 +23,7 @@ public:
     void Draw(Graphics &Gfx);
     void Update();
     void Clear();
+    void Clear(int R, int G, int B);
     void Flip();
     void LimitFramerate();
     void DrawText( String &DrawString, Font &font, int x, int y);

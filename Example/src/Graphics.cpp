@@ -19,7 +19,7 @@ void Graphics::LoadImage(string filename)
 
     if(Load != NULL)
     {
-        Image = SDL_DisplayFormat( Load );
+        Image = SDL_DisplayFormatAlpha( Load );
         SDL_FreeSurface( Load );
     }
     else
