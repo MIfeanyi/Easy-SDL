@@ -8,7 +8,7 @@
 #include <time.h>
 #include <stdio.h>
 #include <iostream>
-#include <SDL.h>
+#include <SDL/SDL.h>
 
 using namespace std;
 

@@ -2,7 +2,7 @@
 #define WINDOW_H
 
 #include <string>
-#include <SDL.h>
+#include <SDL/SDL.h>
 
 #include "String.hpp"
 #include "Graphics.hpp"

@@ -1,10 +1,10 @@
 #ifndef STRING_H
 #define STRING_H
 
-#include<string>
+#include <string>
 #include <sstream>
 
-#include"Font.hpp"
+// String.hpp is no longer depends on Font.hpp
 
 using namespace std;
 
@@ -16,10 +16,11 @@ class String
 public:
     String();
 
-    //Font      font;
     string    Text, Filename;
+
     int       RGB[3];
     SDL_Color TextColor;
+    int       Size;
 
     void ChangeText(string text);
     void ChangeText(int var);

@@ -1,9 +1,9 @@
 #ifndef GRAPHICS_H
 #define GRAPHICS_H
 
-#include<SDL.h>
+#include <SDL/SDL.h>
 #include<string>
-#include<SDL_image.h>
+#include<SDL/SDL_image.h>
 #include<stdio.h>
 #include<iostream>
 
